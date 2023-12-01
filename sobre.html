@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Felipe Blazius Bendo, Davi De Stéfani De Souza e Gabriel Scussel Minatto">
+    <meta name="description" content="Site da empresa de ônibus Bigotur">
+    <meta name="keywords" content="ônibus, transporte, viagem, turismo">
+    <!-- Ícone da página -->
+    <link rel="icon" href="imagens/Bigotur.png" type="image/jpeg">
+    <title>Bigotur Transporte e Turismo</title>
+    <!-- Inclusão do arquivo CSS e script JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho com link para redirecionar à Home e ícones de redes sociais -->
+    <header>
+        <a href="index.html" onclick="redirecionarPagina('Home')">
+            <img src="imagens/BigoturLogo.png" alt="Logo Bigotur" class="logo-bigotur">
+        </a>
+        <a class="icone-insta" href="https://www.instagram.com/bigotur_transportes/" target="blank">
+            <img src="imagens/icon_insta.png" alt="Logo instagram" class="logo">
+        </a>
+        <a class="icone-face" href="https://www.facebook.com/Bigotur" target="blank">
+            <img src="imagens/icon_face.png" alt="Logo facebook" class="logo">
+        </a>
+    </header>
+    <!-- Seção principal com classe "box-prin" -->
+    <section class="box-prin">
+        <!-- Seção com classe "imgonibus" contendo várias seções de imagens e parágrafos -->
+        <section class="imgonibus">
+            <!-- Seção com a primeira imagem e descrição -->
+            <section>
+                <img src="imagens/imagens-sobre/Diplomata-Nielson-1986.PNG" alt="Foto Onibus 1" class="imgonibus1">
+                <p class="Nielsen-86">Primeiros dois ônibus foram: -Diplomata Nielson 1986 -Incasel 1982.</p>
+            </section>
+            <!-- Seção com a segunda imagem e descrição -->
+            <section>
+                <img src="imagens/imagens-sobre/incasel-82.jpg" alt="Foto Onibus 2" class="imgonibus1">
+                <p class="Scania-Marcopolo">Scania Marcopolo 3 motor Br-111 dianteiro.</p>
+            </section>
+            <!-- Seção com a terceira imagem e descrição -->
+            <section>
+                <img src="imagens/imagens-sobre/Scania-Marcopolo3.jpg" alt="Foto Onibus 3" class="imgonibus3">
+                <p class="Volvo-Paradiso-1985">1995 adquirido um Scania Paradiso ano 1986.</p>
+            </section>
+            <!-- Seção com a quarta imagem e descrição -->
+            <section>
+                <img src="imagens/imagens-sobre/Scania-360.jpg" alt="Foto Onibus 4" class="imgonibus4">
+                <p class="Scania-360">Um dos Ônibus atual da frota, Scania 360</p>
+            </section>
+            <!-- Seção com a quinta imagem e descrição -->
+            <section>
+                <img src="imagens/imagens-sobre/JumBuss-380.jpg" alt="Foto Onibus 5" class="imgonibus5">
+                <p class="JumBuss-380">Um dos Ônibus atual da frota, JumBuss 380, imagem ilustrativa</p>
+            </section>
+        </section>
+    </section>
+    <!-- Script JavaScript para manipulação do DOM -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var header = document.querySelector('header');
+            header.parentNode.insertBefore(criarMenu(), header.nextSibling); // adiciona o menu após o header
+            document.body.appendChild(criarRodape()); // adiciona o rodapé no final do body
+            document.body.appendChild(criarArticle()); // adiciona o article no final do body
+        });
+    </script>
+</body>
+</html>

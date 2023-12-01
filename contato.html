@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Definição da linguagem e metadados -->
+<meta name="author" content="Felipe Blazius Bendo, Davi De Stéfani De Souza e Gabriel Scussel Minatto">
+<meta name="description" content="Site da empresa de ônibus Bigotur">
+<meta name="keywords" content="ônibus, transporte, viagem, turismo">
+<!-- Ícone da página -->
+<link rel="icon" href="imagens/Bigotur.png" type="image/jpeg">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bigotur Transporte e Turismo</title>
+    <!-- Inclusão do arquivo CSS e script JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<header>
+    <!-- Cabeçalho com link para redirecionar à Home e ícones de redes sociais -->
+    <a href="index.html" onclick="redirecionarPagina('Home')">
+        <img src="imagens/BigoturLogo.png" alt="Logo Bigotur" class="logo-bigotur">
+
+        <a class="icone-insta" href="https://www.instagram.com/bigotur_transportes/" target="blank">
+            <img src="imagens/icon_insta.png" alt="Logo instagram" class="logo">
+        </a>
+        <a class="icone-face" href="https://www.facebook.com/Bigotur" target="blank">
+            <img src="imagens/icon_face.png" alt="Logo facebook" class="logo">
+        </a>
+    </a>
+</header> 
+
+<section>
+    <!-- Seção com uma imagem de banner de contato -->
+    <img src="imagens/Fundo_da-bigo-vazio.png" alt="Banner de contato" class="bannercont">  
+</section>
+
+<body>
+    <!-- Script JavaScript para manipulação do DOM -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var header = document.querySelector('header');
+            header.parentNode.insertBefore(criarMenu(), header.nextSibling); // adiciona o menu após o header
+            document.body.appendChild(criarRodape()); // adiciona o rodapé no final do body
+            document.body.appendChild(criarArticle()); // adiciona o article no final do body
+        });
+    </script>
+    
+    <!-- Seção principal com classe "second-home" -->
+    <section class="second-home">
+        <!-- Seção com classe "container" contendo navegação e título -->
+        <section class="container">
+            <nav>
+                <ul>
+                    <li class="nav-li-home"><a href="index.html" onclick="redirecionarPagina('Home')">Home</a></li>
+                </ul>
+            </nav>
+            <h1 class="h1-contato">Contato</h1>
+        </section>
+        
+        <!-- Parágrafo com texto informativo -->
+        <h4 class="text-contato">Este espaço foi criado especialmente para você entrar em contato conosco. Para informação ou sugestão, basta preencher corretamente os campos abaixo:</h4>   
+        
+        <!-- Formulário de contato com ação para o Formspree -->
+        <form action="https://formspree.io/f/xnqkklbz" method="post" class="messagebox" id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <input class="button-sent" type="submit" value="ENVIAR">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Definição da linguagem e configuração da viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Metadados: autores, descrição e palavras-chave -->
+<meta name="author" content="Felipe Blazius Bendo, Davi De Stéfani De Souza e Gabriel Scussel Minatto">
+<meta name="description" content="Site da empresa de ônibus Bigotur">
+<meta name="keywords" content="ônibus, transporte, viagem, turismo">
+<!-- Ícone da página -->
+<link rel="icon" href="imagens/Bigotur.png" type="image/jpeg">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bigotur Transporte e Turismo</title>
+    <!-- Inclusão do arquivo CSS e script JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<header>
+  <!-- Cabeçalho com links para redirecionar à Home e redes sociais -->
+  <a href="index.html" onclick="redirecionarPagina('Home')">
+    <img src="imagens/BigoturLogo.png" alt="Logo Bigotur" class="logo-bigotur">
+
+    <a class="icone-insta" href="https://www.instagram.com/bigotur_transportes/" target="blank">
+        <img src="imagens/icon_insta.png" alt="Logo instagram" class="logo">
+    </a>
+    <a class="icone-face" href="https://www.facebook.com/Bigotur" target="blank">
+        <img src="imagens/icon_face.png" alt="Logo facebook" class="logo">
+    </a>
+  </a>
+</header>
+
+<body>
+    <!-- Navegação principal com links para Home, A Empresa e Contato -->
+    <nav class="nav-home">
+        <ul>
+            <li><a href="index.html" onclick="redirecionarPagina('Home')" class="nav-link">Home</a></li>
+            <li><a href="sobre.html" onclick="redirecionarPagina('A Empresa')" class="nav-link">A Empresa</a></li>
+            <li><a href="contato.html" onclick="redirecionarPagina('Contato')" class="nav-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Carrossel de imagens -->
+    <figure id="carousel">
+      <img id="img1" src="imagens/Fundo_da_bigo.png" class="carousel-img active">
+      <img id="img2" src="imagens/Fundo_da_bigo2.png" class="carousel-img">
+    </figure>
+
+    <!-- Seção principal com boas-vindas e descrição da empresa -->
+    <section class="main-section">
+        <h2 class="main-welcome">Bem-vindo à Bigotur Transporte e Turismo</h2>
+        <p>Somos uma empresa especializada em oferecer serviços de transporte e turismo de alta qualidade. Com uma equipe experiente e veículos modernos, garantimos conforto, segurança e excelência em cada viagem.</p>
+        <p>Oferecemos uma ampla variedade de serviços, incluindo traslados para aeroportos, passeios turísticos, viagens corporativas e muito mais. Nossa missão é proporcionar experiências memoráveis e satisfazer as necessidades de nossos clientes.</p>
+        <p>Explore nosso site para saber mais sobre nossos serviços e entre em contato conosco para reservas ou informações adicionais. Estamos ansiosos para atendê-lo e tornar sua viagem uma experiência inesquecível.</p>
+        <!-- Mais parágrafos explicativos sobre a empresa -->
+    </section>
+    
+    <!-- Artigo contendo seções institucionais, de menu e endereço -->
+    <article>
+        <!-- Seção institucional com link para a política de privacidade -->
+        <section id="institucional">
+          <h2 class="textcolor">Institucional</h2>
+          <ul>
+            <li><a href="privacidade.html" onclick="redirecionarPagina('Politica de privacidade')" class="privterm">Política de privacidade</a></li>
+          </ul>
+        </section>
+
+        <!-- Seção de menu com links sobre nós e fale conosco -->
+        <section id="menu">
+          <h2 class="textcolor">Menu</h2>
+          <ul>
+            <li><a href="sobre.html" class="textcolorfooter">Sobre nós</a></li>
+            <li><a href="contato.html" class="textcolorfooter">Fale conosco</a></li>
+          </ul>
+        </section>
+
+        <!-- Seção de endereço com informações de contato -->
+        <section id="escritorio">
+          <h2 class="textcolor">Endereço</h2>
+          <address>
+            Rua Vereador Haroldo Luiz Dandoline, 195 - São Cristóvão, Turvo - SC, 88930-000
+            <br>
+            (48) 3525-0518
+          </address>
+        </section>
+    </article>
+
+    <!-- Rodapé com o ano e o nome da empresa -->
+    <footer>
+        <p>© Bigotur Transporte e Turismo LTDA</p>
+    </footer>
+
+</body>
+</html>

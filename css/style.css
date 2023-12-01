@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-color: rgba(1, 96, 194, 1);
+        color: rgba(0, 32, 103, 1);
+        padding: 10px;
+        text-align: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%; /* Reduzi o padding direito para manter o espaço no canto esquerdo */
+    }
+    
+    .logo-bigotur {
+        transition: all 0.3s ease;
+    }
+    
+    .logo-bigotur:hover {
+        transform: scale(1.05);
+    }
+
+    .nav-home ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-home ul li {
+        margin: 15px 0;
+        border-bottom: 1px solid #fff; /* Adiciona uma linha horizontal abaixo de cada aba */
+        padding-bottom: 5px; /* Adiciona um espaçamento abaixo da linha */
+    }
+
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+}    
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+
+    header {
+        flex-direction: right;
+        padding-left: 5%;
+    }
+
+    .nav-home ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-home ul li {
+        margin: 15px 0;
+        border-bottom: 1px solid #fff; /* Adiciona uma linha horizontal abaixo de cada aba */
+        padding-bottom: 5px; /* Adiciona um espaçamento abaixo da linha */
+    }
+
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(244,244,244,1);
+}
+
+header {
+    background-color: rgba(1,96,194,1);
+    color: rgba(0,32,103,1);
+    padding: 10px;
+    text-align: auto;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header a { 
+    text-decoration: none;
+    color: rgba(0,32,103,1);
+}
+
+.icone-face {
+    text-decoration: none;
+    margin: 10px;
+    transition: all 0.3s ease; /* Isso faz a mudança de tamanho e a adição da sombra suaves */
+}
+.icone-insta {
+    text-decoration: none;
+    margin: 10px;
+    margin-left: auto;
+    transition: all 0.3s ease; /* Isso faz a mudança de tamanho e a adição da sombra suaves */
+}
+
+.icone-insta:hover {
+    transform: scale(1.1); /* Isso faz o elemento ficar 10% maior */
+}
+
+.icone-face:hover {
+    transform: scale(1.1); /* Isso faz o elemento ficar 10% maior */
+}
+
+.nav-home {
+    background-color: rgba(185,202,218,1);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.carousel-img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-img.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.bannercont{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#prevButton:hover,
+#nextButton:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+.main-welcome {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: blue;
+    padding: 30px;
+    /*colocar cor do fundo aqui gurizada, background-color:*/
+}
+
+.main-section {
+    font-family: 'Times New Roman', Times, serif;
+    color: #555;
+    padding: 70px;/* Adicione o padding desejado */
+    margin: 15%;
+    background-color: white;
+    border-radius: 10px; /* ou outro valor que desejar */
+}
+
+.second-home {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    top: 0;
+    margin: 70px;
+    background-color: rgb(98, 153, 207);
+    padding: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; 
+    color: white; 
+    text-align: center;
+    padding: 10px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+form {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+
+.h1-contato {
+    color: black;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    top: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+}   
+
+nav {
+    display: block;
+    justify-content: flex;
+    align-items: center;
+    position: center;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 17%;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgba(1,96,194,1);
+    color: rgba(0,32,103,1); 
+    text-align: center;
+    padding: 1px;
+    margin-top: auto;
+}
+
+.messagebox{
+    display: flex;
+    width: 20%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.button-sent {
+    cursor: pointer;
+}
+
+.box-prin {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 70px;
+    background-color: rgb(223, 238, 255);
+    padding: 0%;
+    box-shadow: 0 2px 4px rgba(124, 185, 255, 0.5);
+    border-radius: 20px;
+}
+
+.imgonibus{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center; /* Adicionado para centralizar as imagens */
+    align-items: center;
+    margin: 0;
+    flex: 50%;
+    height: auto;
+    width: auto;
+}
+
+.Nielsen-86{
+    text-align: center;
+}
+
+.Scania-Marcopolo{
+    text-align: center;
+}
+
+.Volvo-Paradiso-1985{
+    text-align: center;
+}
+
+.Scania-360{
+    text-align: center;
+}
+
+.JumBuss-380{
+    text-align: center;
+}
+
+.imgonibus1 {
+    width: 400px;
+    height: auto; /* Mantém a proporção original da imagem */
+    object-fit: cover;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.imgonibus3 {
+    width: 400px;
+    height: auto; /* Mantém a proporção original da imagem */
+    object-fit: cover;
+    padding: 10px;
+    text-align: center;
+}
+
+.imgonibus4 {
+    width: 400px;
+    height: auto; /* Mantém a proporção original da imagem */
+    object-fit: cover;
+    padding: 10px;
+    text-align: center;
+}
+
+.imgonibus5 {
+    width: 400px;
+    height: auto; /* Mantém a proporção original da imagem */
+    object-fit: cover;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+article {
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  
+  article section {
+    width: 30%;
+    color: rgb(255, 255, 255);
+  }
+  
+  article ul {
+    list-style-type: none;
+    color: white;
+  }
+  
+  article a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+ .textcolor{
+    color: rgba(1,96,194,1);
+}
+
+.backpriv{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    text-align: center;
+    margin: 70px;
+    background-color: rgb(223, 238, 255);
+    padding: 2px;
+    box-shadow: 0 2px 4px rgba(124, 185, 255, 0.5);
+    border-radius: 20px;
+}
+
+ .poliprivback{
+    color: rgba(1,96,194,1);
+    padding: 20px;
+    display: contents;
+    justify-content: flex;
+    text-align: center;
+}
+
+.logo-bigotur:hover {
+    transform: scale(1.05); /* Isso faz o elemento ficar 10% maior */
+}
+
+.logo-bigotur{
+    transition: all 0.5s ease; /* Isso faz a mudança de tamanho e a adição da sombra suaves */
+    width: 100px;  /* Ajuste este valor para o tamanho desejado */
+    height: auto;  /* Isso mantém a proporção da imagem */
+}
